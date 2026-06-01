@@ -15,7 +15,7 @@ function App() {
     <div className="relative w-full overflow-hidden bg-ivory text-slate font-arabic selection:bg-gold-light/30 min-h-[100dvh]">
       {/* Henna Background Image Overlay */}
       <div
-        className="fixed inset-0 pointer-events-none z-0 mix-blend-multiply"
+        className="fixed -inset-[100px] pointer-events-none z-0 mix-blend-multiply"
         style={{
           backgroundImage: `url(${HennaBg})`,
           backgroundSize: 'cover',
