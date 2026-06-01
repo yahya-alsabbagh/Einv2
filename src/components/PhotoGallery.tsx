@@ -21,11 +21,12 @@ function PhotoFrame({ src, alt, caption, rotation = "0deg" }: { src: string, alt
 }
 
 export function PhotoGallery() {
+  const base = import.meta.env.BASE_URL;
   const photos = [
-    { src: '/img1.jpg', caption: 'سفرتنا', rotation: '-3deg' },
-    { src: '/img2.jpg', caption: 'الورد للورد', rotation: '2deg' },
-    { src: '/img3.jpg', caption: 'خطوبتنا', rotation: '4deg' },
-    { src: '/img4.jpg', caption: 'روحها الحلوة', rotation: '-2deg' },
+    { src: `${base}img1.jpg`, caption: 'سفرتنا', rotation: '-3deg' },
+    { src: `${base}img2.jpg`, caption: 'الورد للورد', rotation: '2deg' },
+    { src: `${base}img3.jpg`, caption: 'خطوبتنا', rotation: '4deg' },
+    { src: `${base}img4.jpg`, caption: 'روحها الحلوة', rotation: '-2deg' },
   ];
 
   return (

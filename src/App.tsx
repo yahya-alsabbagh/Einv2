@@ -12,7 +12,7 @@ import HennaBg from './assets/Henna.png';
 
 function App() {
   return (
-    <div className="relative w-full overflow-hidden bg-ivory text-slate font-arabic selection:bg-gold-light/30 min-h-screen">
+    <div className="relative w-full overflow-hidden bg-ivory text-slate font-arabic selection:bg-gold-light/30 min-h-[100dvh]">
       {/* Henna Background Image Overlay */}
       <div
         className="fixed inset-0 pointer-events-none z-0 mix-blend-multiply"
