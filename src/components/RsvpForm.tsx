@@ -83,7 +83,7 @@ export function RsvpForm() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label htmlFor="guests" className="text-slate font-medium text-sm px-1">عدد المرافقين (بحد أقصى 10)</label>
+              <label htmlFor="guests" className="text-slate font-medium text-sm px-1">عدد المرافقين</label>
               <input
                 id="guests"
                 type="number"

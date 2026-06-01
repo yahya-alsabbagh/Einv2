@@ -1,4 +1,12 @@
 import { motion } from 'framer-motion';
+// @ts-ignore
+import img1 from '../assets/img1.jpg';
+// @ts-ignore
+import img2 from '../assets/img2.jpg';
+// @ts-ignore
+import img3 from '../assets/img3.jpg';
+// @ts-ignore
+import img4 from '../assets/img4.jpg';
 
 function PhotoFrame({ src, alt, caption, rotation = "0deg" }: { src: string, alt: string, caption?: string, rotation?: string }) {
   return (
@@ -21,12 +29,11 @@ function PhotoFrame({ src, alt, caption, rotation = "0deg" }: { src: string, alt
 }
 
 export function PhotoGallery() {
-  const base = import.meta.env.BASE_URL;
   const photos = [
-    { src: `${base}img1.jpg`, caption: 'سفرتنا', rotation: '-3deg' },
-    { src: `${base}img2.jpg`, caption: 'الورد للورد', rotation: '2deg' },
-    { src: `${base}img3.jpg`, caption: 'خطوبتنا', rotation: '4deg' },
-    { src: `${base}img4.jpg`, caption: 'روحها الحلوة', rotation: '-2deg' },
+    { src: img1, caption: 'سفرتنا', rotation: '-3deg' },
+    { src: img2, caption: 'الورد للورد', rotation: '2deg' },
+    { src: img3, caption: 'خطوبتنا', rotation: '4deg' },
+    { src: img4, caption: 'روحها الحلوة', rotation: '-2deg' },
   ];
 
   return (
