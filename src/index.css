@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #fdfbf7;
+    --foreground: #2d1b1b;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    direction: rtl;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/30 backdrop-blur-md border border-white/40 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)];
+  }
+  
+  .text-gold-gradient {
+    /* Forcing maroon colors directly to avoid caching issues */
+    background: linear-gradient(to right, #c25e5e, #8a1c1c, #5c0f0f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+}
